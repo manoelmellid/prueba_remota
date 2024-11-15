@@ -51,9 +51,6 @@ if submit_button:
     longitud, latitud, concello_id, ubicacion = concam.procesar_ubicacion(input_text, archivo)
     adelante=1
 
-if concello_id is not None:
-    st.write(f"### Tu ubicación: {concello_id} - {camino}")
-
 if latitud is not None and longitud is not None:
     # Crear el DataFrame solo si ambos valores son válidos
     data = pd.DataFrame({
@@ -62,10 +59,11 @@ if latitud is not None and longitud is not None:
     }, index=[0])  # Proporciona un índice
 
     col1, col2 = st.columns([2,2])
-    #with col1:
-        #gen.mostrar_puntos_con_arcos(latitud, longitud, altura_columna=500)
-    #with col2:
-        #st.map(data) # Mostrar el mapa solo si los datos son válidos
+    with col1:
+        if concello_id is not None:
+            st.write(f"### Tu ubicación: {concello_id} - {camino}")
+    with col2:
+        st.map(data) # Mostrar el mapa solo si los datos son válidos
 
 if adelante is not None and longitud is not None:
     # Pronostico
