@@ -52,7 +52,7 @@ if submit_button:
     adelante=1
 
 if concello_id is not None:
-    st.write(f"### Predicción para tu ubicación: {concello_id}")
+    st.write(f"### Tu ubicación: {concello_id} - {camino}")
 
 if latitud is not None and longitud is not None:
     # Crear el DataFrame solo si ambos valores son válidos
