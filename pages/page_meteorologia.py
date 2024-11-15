@@ -18,9 +18,11 @@ camino = gen.camino()
 if camino == "Camino Portugués":
     archivo = "vertices_250_camino_pt.csv"
 elif camino == "Camino Francés":
-    archivo = "vertices_250_camino_fr.csv"
+    archivo = "vertices_250_camino_pt.csv"
+    st.warning("La función especifica del Camino Francés aún está en desarrollo, se utilizará el Portugués")
 elif camino == "Camino Inglés":
-    archivo = "vertices_250_camino_ig.csv"
+    st.warning("La función especifica del Camino Inglés aún está en desarrollo, se utilizará el Portugués")
+    archivo = "vertices_250_camino_pt.csv"
 
 
 # Entradas del formulario
