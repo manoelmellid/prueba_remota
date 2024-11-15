@@ -61,7 +61,7 @@ if latitud is not None and longitud is not None:
     col1, col2 = st.columns([2,2])
     with col1:
         if concello_id is not None:
-            st.write(f"### Tu ubicación: {concello_id} - {camino}")
+            st.write(f"### {concello_id} - {camino}")
     with col2:
         st.map(data) # Mostrar el mapa solo si los datos son válidos
 
