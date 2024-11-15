@@ -13,10 +13,18 @@ st.divider()
 
 # -------------------------------------------------------------------------------
 
-pages = {
+ages = {
     "Menú": [
+        #st.Page("pages/page_inicio.py", title="Inicio"),
         st.Page("pages/page_meteorologia.py", title="Predicción meteorologica"),
+        #st.Page("pages/page_navegacion.py", title="Herramienta de navegación"),
+        #st.Page("pages/page_ocupacion.py", title="Modelo predictivo de ocupación"),
+        #st.Page("pages/page_notificacion.py", title="Notificación de incidencias"),
+        #st.Page("pages/page_visualizacion.py", title="Mapa de incidencias"),
     ],
+    #"Área privada": [
+        #st.Page("pages/page_recepcion.py", title="Recepción de incidencias"),
+        #st.Page("pages/page_flujos.py", title="Modelo predictivo de flujos"),],
 }
 pg = st.navigation(pages)
 pg.run()
