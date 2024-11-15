@@ -50,6 +50,9 @@ with st.form(key='my_form'):
 if submit_button:
     longitud, latitud, concello_id, ubicacion = concam.procesar_ubicacion(input_text, archivo)
     adelante=1
+    
+if concello_id is not None:
+    st.write(f"### Tu ubicación: {concello_id} - {camino}")
 
 if latitud is not None and longitud is not None:
     # Crear el DataFrame solo si ambos valores son válidos
@@ -59,13 +62,11 @@ if latitud is not None and longitud is not None:
     }, index=[0])  # Proporciona un índice
 
     col1, col2 = st.columns([2,2])
-    with col1:
-        if concello_id is not None:
-            st.write(f"### {concello_id} - {camino}")
-    with col2:
+    #with col1:
+        #if concello_id is not None:
+            #st.write(f"### {concello_id} - {camino}")
+    #with col2:
         #st.map(data) # Mostrar el mapa solo si los datos son válidos
-        st.map(data, use_container_width=False)  # Ajusta el mapa al ancho del contenedor
-
 
 if adelante is not None and longitud is not None:
     # Pronostico
