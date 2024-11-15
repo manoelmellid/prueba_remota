@@ -11,21 +11,4 @@ st.markdown("<h3 style='text-align: center;'>Sistema de monitorización de event
 st.markdown("<h3 style='text-align: center;'>Camino de Santiago - Camino Portugués</h3>", unsafe_allow_html=True)
 st.divider()
 
-pages = {
-    "Menú": [
-        st.Page("pages/page_inicio.py", title="Inicio"),
-        st.Page("pages/page_meteorologia.py", title="Predicción meteorologica"),
-        st.Page("pages/page_navegacion.py", title="Herramienta de navegación"),
-        st.Page("pages/page_ocupacion.py", title="Modelo predictivo de ocupación"),
-        st.Page("pages/page_notificacion.py", title="Notificación de incidencias"),
-        st.Page("pages/page_visualizacion.py", title="Mapa de incidencias"),
-    ],
-    "Área privada": [
-        st.Page("pages/page_recepcion.py", title="Recepción de incidencias"),
-        st.Page("pages/page_flujos.py", title="Modelo predictivo de flujos"),
-    ],
-}
-pg = st.navigation(pages)
-pg.run()
-
 # -------------------------------------------------------------------------------
