@@ -64,7 +64,7 @@ if latitud is not None and longitud is not None:
             st.write(f"### {concello_id} - {camino}")
     with col2:
         #st.map(data) # Mostrar el mapa solo si los datos son válidos
-        st.map(data, use_container_width=True)  # Ajusta el mapa al ancho del contenedor
+        st.map(data, use_container_width=False)  # Ajusta el mapa al ancho del contenedor
 
 
 if adelante is not None and longitud is not None:
