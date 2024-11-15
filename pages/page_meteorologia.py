@@ -15,10 +15,16 @@ end_date = None
 days=None
 
 camino = gen.camino()
-archivo = "vertices_250_camino_pt.csv"
+if camino == "Camino Portugués":
+    archivo = "vertices_250_camino_pt.csv"
+elif camino == "Camino Francés":
+    archivo = "vertices_250_camino_fr.csv"
+elif camino == "Camino Inglés":
+    archivo = "vertices_250_camino_ig.csv"
+
 
 # Entradas del formulario
-input_text = st.text_input("Indica el Km del Camino dónde te encuentras")
+input_text = st.text_input(f"Indica el Km del {camino} dónde te encuentras")
 
 today = datetime.date.today()
 # Selección de solo un día
