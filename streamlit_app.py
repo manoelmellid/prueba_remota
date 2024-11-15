@@ -13,7 +13,7 @@ st.divider()
 
 # -------------------------------------------------------------------------------
 
-ages = {
+pages = {
     "Menú": [
         #st.Page("pages/page_inicio.py", title="Inicio"),
         st.Page("pages/page_meteorologia.py", title="Predicción meteorologica"),
