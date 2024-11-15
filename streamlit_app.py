@@ -12,3 +12,11 @@ st.markdown("<h3 style='text-align: center;'>Camino de Santiago - Camino Portugu
 st.divider()
 
 # -------------------------------------------------------------------------------
+
+pages = {
+    "Menú": [
+        st.Page("pages/page_meteorologia.py", title="Predicción meteorologica"),
+    ],
+}
+pg = st.navigation(pages)
+pg.run()
