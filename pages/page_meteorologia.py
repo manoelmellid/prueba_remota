@@ -15,6 +15,7 @@ end_date = None
 days=None
 
 camino = gen.camino()
+archivo = "vertices_250_camino_pt.csv"
 
 # Entradas del formulario
 input_text = st.text_input("Indica el Km del Camino dónde te encuentras")
