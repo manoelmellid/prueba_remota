@@ -3,7 +3,7 @@ import pydeck as pdk
 import re
 
 def camino():
-    camino = st.selectbox('Selecciona el Camino de Santiago que estás recorriendo:', ['Camino Portugués'])
+    camino = st.selectbox('Selecciona el Camino de Santiago que estás recorriendo:', ['Camino Portugués', 'Camino Francés', 'Camino Inglés'])
     return camino
     
 def login():
