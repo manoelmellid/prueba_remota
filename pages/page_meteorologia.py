@@ -19,9 +19,9 @@ if camino == "Camino Portugués":
     archivo = "vertices_250_camino_pt.csv"
 elif camino == "Camino Francés":
     archivo = "vertices_250_camino_pt.csv"
-    st.warning("La función especifica del Camino Francés aún está en desarrollo, se utilizará el Portugués")
+    st.warning("La función especifica del Camino Francés aún está en desarrollo, se utilizará el Portugués, gracias")
 elif camino == "Camino Inglés":
-    st.warning("La función especifica del Camino Inglés aún está en desarrollo, se utilizará el Portugués")
+    st.warning("La función especifica del Camino Inglés aún está en desarrollo, se utilizará el Portugués, gracias")
     archivo = "vertices_250_camino_pt.csv"
 
 
